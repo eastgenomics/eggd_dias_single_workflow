@@ -1,23 +1,11 @@
 {
-  "name": "dias_single_v1.0.0",
-  "title": "dias_single_v1.0.0",
+  "name": "dias_single_v1.1.0",
+  "title": "dias_single_v1.1.0",
   "outputFolder": "/test",
   "stages": [
     {
-      "id": "stage-FpGkF3j433GZg9QQ6X82Gj9V",
-      "executable": "app-fastqc/2.4.1"
-    },
-    {
-      "id": "stage-FpGkFJj433GxvX376JyVxKpG",
-      "executable": "app-fastqc/2.4.1"
-    },
-    {
-      "id": "stage-FpGkFK0433Gy74J9PYJKV42y",
-      "executable": "app-fastqc/2.4.1"
-    },
-    {
-      "id": "stage-FpGkFK0433Gy74J9PYJKV42z",
-      "executable": "app-fastqc/2.4.1"
+      "id": "stage-Fx13V7j433GjFxbX2XxzYJVY",
+      "executable": "applet-FvyXygj433GbKPPY0QY8ZKQG"
     },
     {
       "id": "stage-Fk9p4Kj4yBGfpvQf85fQXJq5",
@@ -70,7 +58,7 @@
     },
     {
       "id": "stage-Fk9p4x04yBGfpvQf85fQXJq6",
-      "executable": "applet-Fpx4970433GX46x18Jbk831g",
+      "executable": "applet-FvYyYK0433GQzQBZ1J79q4KX",
       "input": {
         "input_vcf": {
           "$dnanexus_link": {
