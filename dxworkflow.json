@@ -8,80 +8,24 @@
     },
     {
       "id": "stage-Fy6fpk040vZZPPbq96Jb2KfK",
-      "executable": "app-sentieon-dnaseq/2.1.0",
-      "input": {
-        "genome_fastagz": {
-          "$dnanexus_link": "file-F403K904F30y2vpVFqxB9kz7"
-        },
-        "gatk_resource_bundle": {
-          "$dnanexus_link": {
-            "project": "project-F3zqGV04fXX5j7566869fjFq",
-            "id": "file-F3zx7gj4fXX8QG3Q42BzpyZJ"
-          }
-        },
-        "targets_bed": [
-          {
-            "$dnanexus_link": "file-Fpz2VzQ433GqY28X2X8Yb1YJ"
-          }
-        ],
-        "genomebwaindex_targz": {
-          "$dnanexus_link": {
-            "project": "project-F3zxk7Q4F30Xp8fG69K1Vppj",
-            "id": "file-F404y604F30fbxQG68KF3GZb"
-          }
-        }
-      }
+      "executable": "app-sentieon-dnaseq/2.0.1"
     },
     {
       "id": "stage-Fy6fq5840vZfYPKj25827FbZ",
-      "executable": "applet-Fp65J60433Gf36b86FGYF280",
-      "input": {
-        "input_bam_index": {
-          "$dnanexus_link": {
-            "outputField": "mappings_bam_bai",
-            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK"
-          }
-        },
-        "input_bam": {
-          "$dnanexus_link": {
-            "outputField": "mappings_bam",
-            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK"
-          }
-        }
-      }
+      "executable": "applet-Fp65J60433Gf36b86FGYF280"
     },
     {
       "id": "stage-FyQbX90433Gg719y554zvQB7",
       "executable": "applet-Fq3B62Q433Gy9KXV97bkfQQv",
       "input": {
-        "bam_index": {
-          "$dnanexus_link": {
-            "outputField": "mappings_bam_bai",
-            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK"
-          }
-        },
         "input_bed": {
           "$dnanexus_link": "file-Fpz2X0Q433GVK5xxPvzqvVPB"
-        },
-        "input_bam": {
-          "$dnanexus_link": {
-            "outputField": "mappings_bam",
-            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK"
-          }
         }
       }
     },
     {
       "id": "stage-Fy6fqQj40vZqfGBg6YXxyV1x",
-      "executable": "applet-FvYyYK0433GQzQBZ1J79q4KX",
-      "input": {
-        "input_vcf": {
-          "$dnanexus_link": {
-            "outputField": "variants_vcf",
-            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK"
-          }
-        }
-      }
+      "executable": "applet-FvYyYK0433GQzQBZ1J79q4KX"
     },
     {
       "id": "stage-Fy6fqf840vZx8V5KBzfYZvPg",
@@ -89,14 +33,8 @@
       "input": {
         "json_file": {
           "$dnanexus_link": {
-            "outputField": "output_json",
-            "stage": "stage-Fy6fqQj40vZqfGBg6YXxyV1x"
-          }
-        },
-        "vcf_file": {
-          "$dnanexus_link": {
-            "outputField": "variants_vcf",
-            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK"
+            "stage": "stage-Fy6fqQj40vZqfGBg6YXxyV1x",
+            "outputField": "output_json"
           }
         }
       }
@@ -105,12 +43,6 @@
       "id": "stage-Fy6fqy040vZV3Gj24vppvJgZ",
       "executable": "applet-FpG4zY8433GbJ9Xj5vBvzBFp",
       "input": {
-        "vcf_file": {
-          "$dnanexus_link": {
-            "outputField": "variants_vcf",
-            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK"
-          }
-        },
         "bed_file": {
           "$dnanexus_link": "file-Fpz2VzQ433GqY28X2X8Yb1YJ"
         }
@@ -120,18 +52,6 @@
       "id": "stage-Fy6fvYQ40vZV1y8p9GYKPYyQ",
       "executable": "applet-Fxq07gQ433Gyz14j5ZZ1fzk1",
       "input": {
-        "index": {
-          "$dnanexus_link": {
-            "outputField": "mappings_bam_bai",
-            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK"
-          }
-        },
-        "bam": {
-          "$dnanexus_link": {
-            "outputField": "mappings_bam",
-            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK"
-          }
-        },
         "bed": {
           "$dnanexus_link": "file-Fpz2X0Q433GVK5xxPvzqvVPB"
         }
@@ -139,41 +59,22 @@
     },
     {
       "id": "stage-Fy6fvx040vZfybXg85Zgkjv0",
-      "executable": "applet-Fk5z0V84yBGZ5P7q3gFgFB64",
-      "input": {
-        "input_bam_index": {
-          "$dnanexus_link": {
-            "outputField": "mappings_bam_bai",
-            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK"
-          }
-        },
-        "input_bam": {
-          "$dnanexus_link": {
-            "outputField": "mappings_bam",
-            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK"
-          }
-        }
-      }
+      "executable": "applet-Fk5z0V84yBGZ5P7q3gFgFB64"
     },
     {
       "id": "stage-Fy6fx2Q40vZbFVxZ283xXGVY",
       "executable": "applet-Fp69k884qBzVfbvP812F92gG",
       "input": {
-        "sorted_bam": {
-          "$dnanexus_link": {
-            "outputField": "mappings_bam",
-            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK"
-          }
-        },
-        "bedfile": {
-          "$dnanexus_link": "file-Fp6B2v8433GbX90y5kX389VB"
-        },
         "fasta_index": {
           "$dnanexus_link": {
             "project": "project-F3zqGV04fXX5j7566869fjFq",
             "id": "file-F3zxG0Q4fXX9YFjP1v5jK9jf"
           }
-        }
+        },
+        "bedfile": {
+          "$dnanexus_link": "file-Fp6B2v8433GbX90y5kX389VB"
+        },
+        "run_CollectMultipleMetrics": false
       }
     }
   ]
