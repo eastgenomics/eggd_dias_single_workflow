@@ -86,7 +86,7 @@
       "executable": "applet-FpG4zY8433GbJ9Xj5vBvzBFp",
       "input": {
         "bed_file": {
-          "$dnanexus_link": "file-Fpz2VzQ433GqY28X2X8Yb1YJ"
+          "$dnanexus_link": "file-Fpz2X0Q433GVK5xxPvzqvVPB"
         },
         "vcf_file": {
           "$dnanexus_link": {
