@@ -3,10 +3,10 @@ DNAnexus workflow definition file of dias_single for germline analysis.
 
 -------
 
-## Current Version: 1.2.0
+## Current Version: 1.2.1
 
 ## Release Notes:
-* Accepts any number of fastq files for the fastqc step.
+* region_coverage from 1.0.2 to 1.0.3
 
 ## What apps are used in this workflow?
 
@@ -18,7 +18,7 @@ DNAnexus workflow definition file of dias_single for germline analysis.
 |nirvana            |2.0.1|
 |nirvana2vcf        |1.1.0|
 |vcf_qc 	        |1.0.1|  
-|region_coverage   	|1.0.2|
+|region_coverage   	|1.0.3|
 |mosdepth           |1.0.1|
 |samtools_flagstat  |1.0.0|
 |picardqc           |1.0.0|
