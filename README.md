@@ -3,10 +3,10 @@ DNAnexus workflow definition file of dias_single for germline analysis.
 
 -------
 
-## Current Version: 1.2.1
+## Current Version: 1.2.2
 
 ## Release Notes:
-* region_coverage from 1.0.2 to 1.0.4
+* region_coverage file id changed from applet-G0VqjYQ4PFX0XQ994vzJ0Vxg to applet-G0X0Gvj433Gzzqy90PG6vYv0
 
 ## What apps are used in this workflow?
 
