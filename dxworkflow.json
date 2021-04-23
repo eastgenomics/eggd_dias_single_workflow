@@ -1,6 +1,6 @@
 {
-  "name": "dias_single_v1.2.1",
-  "title": "dias_single_v1.2.1",
+  "name": "dias_single_v1.2.2",
+  "title": "dias_single_v1.2.2",
   "stages": [
     {
       "id": "stage-Fy6fpV840vZZ0v6J8qBQYqZF",
@@ -97,8 +97,8 @@
       }
     },
     {
-      "id": "stage-FyQbX90433Gg719y554zvQB7",
-      "executable": "applet-G0VqjYQ4PFX0XQ994vzJ0Vxg",
+      "id": "stage-G21GzGj433Gky42j42Q5bJkf",
+      "executable": "applet-G0X0Gvj433Gzzqy90PG6vYv0",
       "input": {
         "bam_index": {
           "$dnanexus_link": {
