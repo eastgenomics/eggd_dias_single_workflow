@@ -3,13 +3,10 @@ DNAnexus workflow definition file of dias_single for germline analysis.
 
 -------
 
-## Current Version: 1.2.2
+## Current Version: 1.2.3
 
 ## Release Notes:
-* Updated region_coverage app (v1.0.4 -> 1.0.5)
-* Updated nirvana2vcf app (v1.1.0 → v1.1.1)
-* Removed default target bed from Sentieon - now calls whole genome by default
-* Removed default capture bed from Picard
+* Updated verifybamid from v2.0.0 to v2.1.0
 
 ## What apps are used in this workflow?
 
@@ -17,7 +14,7 @@ DNAnexus workflow definition file of dias_single for germline analysis.
 |---	|---	|
 |multi_fastqc       |1.1.0|
 |sention-dnaseq     |2.0.1|
-|verifybamid        |2.0.0|
+|verifybamid        |2.1.0|
 |nirvana            |2.0.1|
 |nirvana2vcf        |1.1.1|
 |vcf_qc 	        |1.0.1|  
