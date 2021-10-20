@@ -174,14 +174,11 @@
       }
     },
     {
-      "id": "stage-G5Xqpk04qyvx0j2P5B4PB426",
-      "executable": "applet-G5X21Gj4qyvXY6K78vFJFj28",
+      "id": "stage-G5gzP78433GVJ1z1PBKBqxzy",
+      "executable": "applet-G5YG118433Gk5xPbGx172fq8",
       "input": {
         "reference_genome": {
-          "$dnanexus_link": {
-            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-            "id": "file-F403K904F30y2vpVFqxB9kz7"
-          }
+          "$dnanexus_link": "file-F403K904F30y2vpVFqxB9kz7"
         },
         "sample_vcf": {
           "$dnanexus_link": {
@@ -190,16 +187,10 @@
           }
         },
         "snp_site_vcf": {
-          "$dnanexus_link": {
-            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-            "id": "file-G18PB8Q4vQpfvPv83qKpj2QG"
-          }
+          "$dnanexus_link": "file-G18PB8Q4vQpfvPv83qKpj2QG"
         },
         "reference_genome_index": {
-          "$dnanexus_link": {
-            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-            "id": "file-F3zxG0Q4fXX9YFjP1v5jK9jf"
-          }
+          "$dnanexus_link": "file-F3zxG0Q4fXX9YFjP1v5jK9jf"
         }
       }
     }
