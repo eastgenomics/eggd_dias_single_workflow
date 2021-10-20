@@ -1,6 +1,6 @@
 {
-  "name": "dias_single_v1.2.3",
-  "title": "dias_single_v1.2.3",
+  "name": "dias_single_v1.3.0",
+  "title": "dias_single_v1.3.0",
   "stages": [
     {
       "id": "stage-Fy6fpV840vZZ0v6J8qBQYqZF",
@@ -169,6 +169,36 @@
           "$dnanexus_link": {
             "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK",
             "outputField": "mappings_bam_bai"
+          }
+        }
+      }
+    },
+    {
+      "id": "stage-G5Xqpk04qyvx0j2P5B4PB426",
+      "executable": "applet-G5X21Gj4qyvXY6K78vFJFj28",
+      "input": {
+        "reference_genome": {
+          "$dnanexus_link": {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-F403K904F30y2vpVFqxB9kz7"
+          }
+        },
+        "sample_vcf": {
+          "$dnanexus_link": {
+            "outputField": "variants_vcf",
+            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK"
+          }
+        },
+        "snp_site_vcf": {
+          "$dnanexus_link": {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-G18PB8Q4vQpfvPv83qKpj2QG"
+          }
+        },
+        "reference_genome_index": {
+          "$dnanexus_link": {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-F3zxG0Q4fXX9YFjP1v5jK9jf"
           }
         }
       }
