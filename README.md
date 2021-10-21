@@ -3,10 +3,10 @@ DNAnexus workflow definition file of dias_single for germline analysis.
 
 -------
 
-## Current Version: 1.2.3
+## Current Version: 1.3.0
 
 ## Release Notes:
-* Updated verifybamid from v2.0.0 to v2.1.0
+* Add somalier_extract v1.0.2
 
 ## What apps are used in this workflow?
 
@@ -22,10 +22,11 @@ DNAnexus workflow definition file of dias_single for germline analysis.
 |mosdepth           |1.0.1|
 |samtools_flagstat  |1.0.0|
 |picardqc           |1.0.0|
+|somalier_extract   |1.0.2|
 
 
 ## What release of dias.py is required to run this workflow?
 
-Works with dias_batch_running v1.6.1
+Works with dias_batch_running v1.8.0
 
 #### This workflow was made by EMEE GLH
