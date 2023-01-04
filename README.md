@@ -28,8 +28,4 @@ DNAnexus workflow definition file of dias_single for germline analysis.
 |somalier_extract   |1.0.2|
 
 
-## What release of dias.py is required to run this workflow?
-
-Works with dias_batch_running v1.8.0
-
 #### This workflow was made by EMEE GLH
