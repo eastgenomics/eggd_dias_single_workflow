@@ -7,9 +7,8 @@ DNAnexus workflow definition file of dias_single for germline analysis.
 
 ## Release Notes:
 * Sentieon version updated from v2.0.1 to v4.0.1
-* Sentieon app configurations have been changed to adapt to using decoy sequences in reference genome
+* Sentieon app configurations have been changed to adapt to using decoy sequences in reference genome during alignment
 * Removed nivana_v2.0.1, nivana2vcf_v1.1.1 and region_coverage_v1.0.5 from Dias Single workflow
-* Uses new TWE and CEN capture BED files for GRCh38 
 * Uses new reference genome for GRCh38 (masked with decoy sequences)
 * Uses new formatted omni25 VCF file for GRCh38 and sites VCF file for b38
 * Uses new FASTA and BWA indexed reference genome for GRCh38 (masked with decoy sequences)
