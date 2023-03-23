@@ -3,7 +3,7 @@ DNAnexus workflow definition file of dias_single for germline analysis.
 
 -------
 
-## Current Version: 2.0.1
+## Current Version: 2.1.0
 
 ## Release Notes:
 * Updated README to current version
@@ -13,13 +13,13 @@ DNAnexus workflow definition file of dias_single for germline analysis.
 |  App 	| Version  	|
 |---	|---	|
 |multi_fastqc       |1.1.0|
-|sention-dnaseq     |4.0.1|
-|verifybamid        |2.1.0|
-|vcf_qc 	        |1.0.1|  
+|sention-dnaseq     |4.2.1|
+|verifybamid        |2.2.0|
+|vcf_qc 	        |1.0.1|
 |mosdepth           |1.0.1|
-|samtools_flagstat  |1.0.0|
+|samtools_flagstat  |1.1.0|
 |picardqc           |1.0.0|
-|somalier_extract   |1.0.2|
+|somalier_extract   |1.1.0|
 
 
 #### This workflow was made by EMEE GLH
