@@ -5,9 +5,6 @@ DNAnexus workflow definition file of dias_single for germline analysis.
 
 ## Current Version: 2.1.0
 
-## Release Notes:
-* Updated README to current version
-
 ## What apps are used in this workflow?
 
 |  App 	| Version  	|
