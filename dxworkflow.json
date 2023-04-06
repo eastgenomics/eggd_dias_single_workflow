@@ -14,26 +14,6 @@
       "name": "sentieon_dnaseq",
       "executable": "app-sentieon-dnaseq/4.2.1",
       "input": {
-        "output_metrics": true,
-        "ignore_decoy": true,
-        "genome_fastagz": {
-          "$dnanexus_link": {
-            "project": "project-F3zxk7Q4F30Xp8fG69K1Vppj",
-            "id": "file-F403K904F30y2vpVFqxB9kz7"
-          }
-        },
-        "genomebwaindex_targz": {
-          "$dnanexus_link": {
-            "project": "project-F3zxk7Q4F30Xp8fG69K1Vppj",
-            "id": "file-F404y604F30fbxQG68KF3GZb"
-          }
-        },
-        "gatk_resource_bundle": {
-          "$dnanexus_link": {
-            "project": "project-F3zqGV04fXX5j7566869fjFq",
-            "id": "file-F3zx7gj4fXX8QG3Q42BzpyZJ"
-          }
-        }
       }
     },
     {
@@ -41,12 +21,6 @@
       "name": "verifybamid",
       "executable": "app-eggd_verifybamid/2.2.1",
       "input": {
-        "vcf_file": {
-          "$dnanexus_link": {
-            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-            "id": "file-G08V2gj41zgGYp1K79YZXqx8"
-          }
-        },
         "input_bam": {
           "$dnanexus_link": {
             "stage": "stage-sentieon_dnaseq",
@@ -70,12 +44,6 @@
           "$dnanexus_link": {
             "stage": "stage-sentieon_dnaseq",
             "outputField": "variants_vcf"
-          }
-        },
-        "bed_file": {
-          "$dnanexus_link": {
-            "project": "project-Fv2gqv04kxV0QZgY3gZ1VG0P",
-            "id": "file-Fpz2X0Q433GVK5xxPvzqvVPB"
           }
         }
       }
@@ -109,13 +77,6 @@
             "stage": "stage-sentieon_dnaseq",
             "outputField": "mappings_bam"
           }
-        },
-        "run_CollectMultipleMetrics": false,
-        "fasta_index": {
-          "$dnanexus_link": {
-            "project": "project-F3zqGV04fXX5j7566869fjFq",
-            "id": "file-F3zxG0Q4fXX9YFjP1v5jK9jf"
-          }
         }
       }
     },
@@ -143,30 +104,6 @@
       "name": "somalier_extract",
       "executable": "app-eggd_somalier_extract/1.1.0",
       "input": {
-        "somalier_docker": {
-          "$dnanexus_link": {
-            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-            "id": "file-GPQX4G04x14XV5PFfqGkGJk1"
-          }
-        },
-        "reference_genome": {
-          "$dnanexus_link": {
-            "project": "project-Fv2gqv04kxV0QZgY3gZ1VG0P",
-            "id": "file-F403K904F30y2vpVFqxB9kz7"
-          }
-        },
-        "reference_genome_index": {
-          "$dnanexus_link": {
-            "project": "project-Fv2gqv04kxV0QZgY3gZ1VG0P",
-            "id": "file-F3zxG0Q4fXX9YFjP1v5jK9jf"
-          }
-        },
-        "snp_site_vcf": {
-          "$dnanexus_link": {
-            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-            "id": "file-G18PB8Q4vQpfvPv83qKpj2QG"
-          }
-        },
         "sample_vcf": {
           "$dnanexus_link": {
             "stage": "stage-sentieon_dnaseq",
