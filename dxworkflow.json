@@ -12,7 +12,7 @@
     {
       "id": "stage-sentieon_dnaseq",
       "name": "sentieon_dnaseq",
-      "executable": "app-sentieon-dnaseq/4.2.1",
+      "executable": "app-sentieon-dnaseq/4.2.1"
     },
     {
       "id": "stage-verifybamid",
