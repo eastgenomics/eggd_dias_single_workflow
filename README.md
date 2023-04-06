@@ -11,7 +11,7 @@ DNAnexus workflow definition file of dias_single for germline analysis.
 |---	|---	|
 |multi_fastqc       |1.1.0|
 |sention-dnaseq     |4.2.1|
-|verifybamid        |2.2.0|
+|verifybamid        |2.2.1|
 |vcf_qc 	        |1.0.1|
 |mosdepth           |1.0.1|
 |samtools_flagstat  |1.1.0|
