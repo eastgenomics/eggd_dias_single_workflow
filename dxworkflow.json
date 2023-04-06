@@ -5,13 +5,13 @@
   "summary": "Germline single sample workflow",
   "stages": [
     {
-      "id": "stage-Fy6fpV840vZZ0v6J8qBQYqZF",
-      "name": "QC-fastqc",
+      "id": "stage-fastQC",
+      "name": "fastqc",
       "executable": "applet-FvyXygj433GbKPPY0QY8ZKQG"
     },
     {
-      "id": "stage-Fy6fpk040vZZPPbq96Jb2KfK",
-      "name": "sentieon-dnaseq",
+      "id": "stage-sentieon_dnaseq",
+      "name": "sentieon_dnaseq",
       "executable": "app-sentieon-dnaseq/4.2.1",
       "input": {
         "output_metrics": true,
@@ -37,9 +37,9 @@
       }
     },
     {
-      "id": "stage-Fy6fq5840vZfYPKj25827FbZ",
-      "name": "QC-verifybamid",
-      "executable": "app-eggd_verifybamid/2.2.0",
+      "id": "stage-verifybamid",
+      "name": "verifybamid",
+      "executable": "app-eggd_verifybamid/2.2.1",
       "input": {
         "vcf_file": {
           "$dnanexus_link": {
@@ -49,26 +49,26 @@
         },
         "input_bam": {
           "$dnanexus_link": {
-            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK",
+            "stage": "stage-sentieon_dnaseq",
             "outputField": "mappings_bam"
           }
         },
         "input_bam_index": {
           "$dnanexus_link": {
-            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK",
+            "stage": "stage-sentieon_dnaseq",
             "outputField": "mappings_bam_bai"
           }
         }
       }
     },
     {
-      "id": "stage-Fy6fqy040vZV3Gj24vppvJgZ",
-      "name": "QC-vcf-qc",
+      "id": "stage-vcfqc",
+      "name": "vcfqc",
       "executable": "applet-FpG4zY8433GbJ9Xj5vBvzBFp",
       "input": {
         "vcf_file": {
           "$dnanexus_link": {
-            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK",
+            "stage": "stage-sentieon_dnaseq",
             "outputField": "variants_vcf"
           }
         },
@@ -81,32 +81,32 @@
       }
     },
     {
-      "id": "stage-Fy6fvx040vZfybXg85Zgkjv0",
-      "name": "QC-samtools_flagstat",
+      "id": "stage-samtools_flagstat",
+      "name": "samtools_flagstat",
       "executable": "app-eggd_samtools_flagstat/1.1.0",
       "input": {
         "input_bam_index": {
           "$dnanexus_link": {
-            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK",
+            "stage": "stage-sentieon_dnaseq",
             "outputField": "mappings_bam_bai"
           }
         },
         "input_bam": {
           "$dnanexus_link": {
-            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK",
+            "stage": "stage-sentieon_dnaseq",
             "outputField": "mappings_bam"
           }
         }
       }
     },
     {
-      "id": "stage-Fy6fx2Q40vZbFVxZ283xXGVY",
-      "name": "QC-picardQC",
+      "id": "stage-picardQC",
+      "name": "picardQC",
       "executable": "applet-Fp69k884qBzVfbvP812F92gG",
       "input": {
         "sorted_bam": {
           "$dnanexus_link": {
-            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK",
+            "stage": "stage-sentieon_dnaseq",
             "outputField": "mappings_bam"
           }
         },
@@ -120,27 +120,27 @@
       }
     },
     {
-      "id": "stage-Fy6fvYQ40vZV1y8p9GYKPYyQ",
-      "name": "coverage-mosdepth",
+      "id": "stage-mosdepth",
+      "name": "mosdepth",
       "executable": "applet-Fxq07gQ433Gyz14j5ZZ1fzk1",
       "input": {
         "bam": {
           "$dnanexus_link": {
-            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK",
+            "stage": "stage-sentieon_dnaseq",
             "outputField": "mappings_bam"
           }
         },
         "index": {
           "$dnanexus_link": {
-            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK",
+            "stage": "stage-sentieon_dnaseq",
             "outputField": "mappings_bam_bai"
           }
         }
       }
     },
     {
-      "id": "stage-G5gzP78433GVJ1z1PBKBqxzy",
-      "name": "somalier-extract",
+      "id": "stage-somalier_extract",
+      "name": "somalier_extract",
       "executable": "app-eggd_somalier_extract/1.1.0",
       "input": {
         "somalier_docker": {
@@ -169,7 +169,7 @@
         },
         "sample_vcf": {
           "$dnanexus_link": {
-            "stage": "stage-Fy6fpk040vZZPPbq96Jb2KfK",
+            "stage": "stage-sentieon_dnaseq",
             "outputField": "variants_vcf"
           }
         }
