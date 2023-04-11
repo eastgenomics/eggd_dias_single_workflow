@@ -46,16 +46,16 @@
       "id": "stage-samtools_flagstat",
       "executable": "app-eggd_samtools_flagstat/1.1.0",
       "input": {
-        "input_bam_index": {
-          "$dnanexus_link": {
-            "stage": "stage-sentieon_dnaseq",
-            "outputField": "mappings_bam_bai"
-          }
-        },
         "input_bam": {
           "$dnanexus_link": {
             "stage": "stage-sentieon_dnaseq",
             "outputField": "mappings_bam"
+          }
+        },
+        "input_bam_index": {
+          "$dnanexus_link": {
+            "stage": "stage-sentieon_dnaseq",
+            "outputField": "mappings_bam_bai"
           }
         }
       }
