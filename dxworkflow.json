@@ -6,17 +6,14 @@
   "stages": [
     {
       "id": "stage-fastQC",
-      "name": "fastqc",
       "executable": "applet-FvyXygj433GbKPPY0QY8ZKQG"
     },
     {
       "id": "stage-sentieon_dnaseq",
-      "name": "sentieon_dnaseq",
       "executable": "app-sentieon-dnaseq/4.2.1"
     },
     {
       "id": "stage-verifybamid",
-      "name": "verifybamid",
       "executable": "app-eggd_verifybamid/2.2.1",
       "input": {
         "input_bam": {
@@ -35,7 +32,6 @@
     },
     {
       "id": "stage-vcfqc",
-      "name": "vcfqc",
       "executable": "applet-FpG4zY8433GbJ9Xj5vBvzBFp",
       "input": {
         "vcf_file": {
@@ -48,7 +44,6 @@
     },
     {
       "id": "stage-samtools_flagstat",
-      "name": "samtools_flagstat",
       "executable": "app-eggd_samtools_flagstat/1.1.0",
       "input": {
         "input_bam_index": {
@@ -67,7 +62,6 @@
     },
     {
       "id": "stage-picardQC",
-      "name": "picardQC",
       "executable": "applet-Fp69k884qBzVfbvP812F92gG",
       "input": {
         "sorted_bam": {
@@ -80,7 +74,6 @@
     },
     {
       "id": "stage-mosdepth",
-      "name": "mosdepth",
       "executable": "applet-Fxq07gQ433Gyz14j5ZZ1fzk1",
       "input": {
         "bam": {
@@ -99,7 +92,6 @@
     },
     {
       "id": "stage-somalier_extract",
-      "name": "somalier_extract",
       "executable": "app-eggd_somalier_extract/1.1.0",
       "input": {
         "sample_vcf": {
