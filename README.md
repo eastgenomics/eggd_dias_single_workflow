@@ -4,6 +4,9 @@ DNAnexus workflow definition file of dias_single for germline analysis.
 -------
 
 ## Current Version: 2.1.0
+Input files were removed from the workflow description and need to be provided.
+
+This is to allow for flexibility and control of the input files via a config file.
 
 ## What apps are used in this workflow?
 
