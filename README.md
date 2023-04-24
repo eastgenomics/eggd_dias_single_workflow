@@ -1,5 +1,5 @@
 # dias_single (DNAnexus Platform Workflow)
-DNAnexus workflow definition file of dias_single for germline analysis.
+DNAnexus workflow definition file of dias_single for germline analysis to be run once per sample on a sequencing run.
 
 -------
 
