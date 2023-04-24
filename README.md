@@ -16,9 +16,9 @@ This is to allow for flexibility and control of the input files via a config fil
 |sention-dnaseq     |4.2.1|
 |verifybamid        |2.2.1|
 |vcf_qc 	        |1.0.1|
-|mosdepth           |1.0.1|
 |samtools_flagstat  |1.1.0|
 |picardqc           |1.0.0|
+|mosdepth           |1.0.1|
 |somalier_extract   |1.1.0|
 
 
