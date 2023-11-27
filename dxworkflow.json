@@ -1,7 +1,7 @@
 {
-  "name": "dias_single_v2.1.0",
-  "title": "dias_single_v2.1.0",
-  "version": "2.1.0",
+  "name": "dias_single_v2.2.0",
+  "title": "dias_single_v2.2.0",
+  "version": "2.2.0",
   "summary": "Germline single sample workflow",
   "stages": [
     {
@@ -92,7 +92,7 @@
     },
     {
       "id": "stage-somalier_extract",
-      "executable": "app-eggd_somalier_extract/1.1.0",
+      "executable": "app-eggd_somalier_extract/1.2.0",
       "input": {
         "sample_vcf": {
           "$dnanexus_link": {
