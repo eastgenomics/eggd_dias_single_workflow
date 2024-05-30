@@ -1,7 +1,7 @@
 {
-  "name": "dias_single_v2.2.0",
-  "title": "dias_single_v2.2.0",
-  "version": "2.2.0",
+  "name": "dias_single_v2.3.0",
+  "title": "dias_single_v2.3.0",
+  "version": "2.3.0",
   "summary": "Germline single sample workflow",
   "stages": [
     {
@@ -98,6 +98,24 @@
           "$dnanexus_link": {
             "stage": "stage-sentieon_dnaseq",
             "outputField": "variants_vcf"
+          }
+        }
+      }
+    },
+    {
+      "id": "stage-sex_check",
+      "executable": "app-GgkG1Zj4j202P93478jBz5fB",
+      "input": {
+        "input_bam": {
+          "$dnanexus_link": {
+            "stage": "stage-sentieon_dnaseq",
+            "outputField": "mappings_bam"
+          }
+        },
+        "index_file": {
+          "$dnanexus_link": {
+            "stage": "stage-sentieon_dnaseq",
+            "outputField": "mappings_bam_bai"
           }
         }
       }
