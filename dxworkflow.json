@@ -6,7 +6,7 @@
   "stages": [
     {
       "id": "stage-fastQC",
-      "executable": "applet-FvyXygj433GbKPPY0QY8ZKQG"
+      "executable": "app-eggd_fastqc/1.2.0"
     },
     {
       "id": "stage-sentieon_dnaseq",
@@ -62,7 +62,7 @@
     },
     {
       "id": "stage-picardQC",
-      "executable": "applet-Fp69k884qBzVfbvP812F92gG",
+      "executable": "app-eggd_picard_QC/1.1.0",
       "input": {
         "sorted_bam": {
           "$dnanexus_link": {
@@ -74,7 +74,7 @@
     },
     {
       "id": "stage-mosdepth",
-      "executable": "applet-Fxq07gQ433Gyz14j5ZZ1fzk1",
+      "executable": "app-eggd_mosdepth/1.1.0",
       "input": {
         "bam": {
           "$dnanexus_link": {
@@ -104,7 +104,7 @@
     },
     {
       "id": "stage-sex_check",
-      "executable": "app-GgkG1Zj4j202P93478jBz5fB",
+      "executable": "app-eggd_sex_check/1.1.0",
       "input": {
         "input_bam": {
           "$dnanexus_link": {
