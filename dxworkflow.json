@@ -3,6 +3,7 @@
   "title": "dias_single_v2.4.0",
   "version": "2.4.0",
   "summary": "Germline single sample workflow",
+  "whatsNew": "Sentieon rolled back to v3.2.0",
   "stages": [
     {
       "id": "stage-fastQC",
