@@ -1,7 +1,7 @@
 {
-  "name": "dias_single_v2.2.0",
-  "title": "dias_single_v2.2.0",
-  "version": "2.2.0",
+  "name": "dias_single_v2.4.0",
+  "title": "dias_single_v2.4.0",
+  "version": "2.4.0",
   "summary": "Germline single sample workflow",
   "stages": [
     {
@@ -10,7 +10,7 @@
     },
     {
       "id": "stage-sentieon_dnaseq",
-      "executable": "app-sentieon-dnaseq/4.2.1"
+      "executable": "app-sentieon-dnaseq/3.2.0"
     },
     {
       "id": "stage-verifybamid",
