@@ -3,7 +3,7 @@
   "title": "dias_single_v2.4.0",
   "version": "2.4.0",
   "summary": "Germline single sample workflow",
-  "whatsNew": "Sentieon rolled back to v3.2.0",
+  "whatsNew": "Sentieon updated to v4.2.2",
   "stages": [
     {
       "id": "stage-fastQC",
@@ -11,7 +11,7 @@
     },
     {
       "id": "stage-sentieon_dnaseq",
-      "executable": "app-sentieon-dnaseq/3.2.0"
+      "executable": "app-sentieon-dnaseq/4.2.2"
     },
     {
       "id": "stage-verifybamid",

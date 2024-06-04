@@ -13,7 +13,7 @@ This is to allow for flexibility and control of the input files via a config fil
 |  App 	| Version  	|
 |---	|---	|
 |multi_fastqc       |1.1.0|
-|sention-dnaseq     |3.2.0|
+|sention-dnaseq     |4.2.2|
 |verifybamid        |2.2.1|
 |vcf_qc 	        |1.0.1|
 |samtools_flagstat  |1.1.0|
