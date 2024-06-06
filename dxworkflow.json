@@ -1,8 +1,9 @@
 {
-  "name": "dias_single_v2.3.0",
-  "title": "dias_single_v2.3.0",
-  "version": "2.3.0",
+  "name": "dias_single_v2.5.0",
+  "title": "dias_single_v2.5.0",
+  "version": "2.5.0",
   "summary": "Germline single sample workflow",
+  "whatsNew": "*v2.4.0: Sentieon updated to v4.2.2; *v2.5.0: add new sex_check app, updated mosdepth, picard and fastqc to latest version",
   "stages": [
     {
       "id": "stage-fastQC",
@@ -10,7 +11,7 @@
     },
     {
       "id": "stage-sentieon_dnaseq",
-      "executable": "app-sentieon-dnaseq/4.2.1"
+      "executable": "app-sentieon-dnaseq/4.2.2"
     },
     {
       "id": "stage-verifybamid",
