@@ -3,7 +3,10 @@
   "title": "dias_single_v2.5.0",
   "version": "2.5.0",
   "summary": "Germline single sample workflow",
-  "whatsNew": "*v2.4.0: Sentieon updated to v4.2.2; *v2.5.0: add new sex_check app, updated mosdepth, picard and fastqc to latest version",
+  "whatsNew": {
+                "v2.4.0": "Sentieon updated to v4.2.2",
+                "v2.5.0": "Added new sex_check app, updated fastqc, picardQC and mosdepth, to latest version"
+  },
   "stages": [
     {
       "id": "stage-fastQC",
