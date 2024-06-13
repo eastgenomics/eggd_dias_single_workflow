@@ -3,7 +3,7 @@ DNAnexus workflow definition file of dias_single for germline analysis to be run
 
 -------
 
-## Current Version: 2.4.0
+## Current Version: 2.5.0
 Input files were removed from the workflow description and need to be provided.
 
 This is to allow for flexibility and control of the input files via a config file.
@@ -12,14 +12,16 @@ This is to allow for flexibility and control of the input files via a config fil
 
 |  App 	| Version  	|
 |---	|---	|
-|multi_fastqc       |1.1.0|
+|eggd_fastqc       |1.2.0|
 |sention-dnaseq     |4.2.2|
 |verifybamid        |2.2.1|
 |vcf_qc 	        |1.0.1|
 |samtools_flagstat  |1.1.0|
-|picardqc           |1.0.0|
-|mosdepth           |1.0.1|
+|picardqc           |1.1.0|
+|mosdepth           |1.1.0|
 |somalier_extract   |1.2.0|
+|sex_check          |1.1.0|
+
 
 
 #### This workflow was made by EMEE GLH
