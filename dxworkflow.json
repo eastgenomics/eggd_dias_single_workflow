@@ -1,11 +1,12 @@
 {
-  "name": "dias_single_v2.5.0",
-  "title": "dias_single_v2.5.0",
-  "version": "2.5.0",
+  "name": "dias_single_v2.6.0",
+  "title": "dias_single_v2.6.0",
+  "version": "2.6.0",
   "summary": "Germline single sample workflow",
   "whatsNew": {
                 "v2.4.0": "Sentieon updated to v4.2.2",
-                "v2.5.0": "Added new sex_check app, updated fastqc, picardQC and mosdepth, to latest version"
+                "v2.5.0": "Added new sex_check app, updated fastqc, picardQC and mosdepth, to latest version",
+                "v2.6.0": "Update vcf_qc to v2.0.0"
   },
   "stages": [
     {
@@ -36,7 +37,7 @@
     },
     {
       "id": "stage-vcfQC",
-      "executable": "applet-FpG4zY8433GbJ9Xj5vBvzBFp",
+      "executable": "app-eggd_vcf_qc/2.0.0",
       "input": {
         "vcf_file": {
           "$dnanexus_link": {
