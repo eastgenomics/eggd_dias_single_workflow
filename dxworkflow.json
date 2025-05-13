@@ -135,19 +135,19 @@
         "vcf_file": {
           "$dnanexus_link": {
             "stage": "stage-sentieon_dnaseq",
-            "outputField": "variant_calls_vcf"
+            "outputField": "sentieon_vcf"
           }
         },
         "input_bam": {
           "$dnanexus_link": {
             "stage": "stage-sentieon_dnaseq",
-            "outputField": "mappings_bam"
+            "outputField": "input_bam"
           }
         },
         "input_bam_index": {
           "$dnanexus_link": {
             "stage": "stage-sentieon_dnaseq",
-            "outputField": "mappings_bam_bai"
+            "outputField": "input_bai"
           }
         }
       }
