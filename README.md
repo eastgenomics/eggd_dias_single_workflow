@@ -21,7 +21,7 @@ This is to allow for flexibility and control of the input files via a config fil
 |mosdepth           |1.1.0|
 |somalier_extract   |1.2.0|
 |sex_check          |1.1.0|
-|eggd_additional_region_calling	|1.0.0|
+|eggd_additional_regions_calling	|1.0.0|
 
 
 
