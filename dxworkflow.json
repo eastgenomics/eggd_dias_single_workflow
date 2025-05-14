@@ -132,22 +132,22 @@
       "id": "stage-additional_region_calling",
       "executable": "app-eggd_additional_region_calling/1.0.0",
       "input": {
-        "vcf_file": {
+        "sentieon_vcf": {
           "$dnanexus_link": {
             "stage": "stage-sentieon_dnaseq",
-            "outputField": "sentieon_vcf"
+            "outputField": "variant_calls_vcf"
           }
         },
         "input_bam": {
           "$dnanexus_link": {
             "stage": "stage-sentieon_dnaseq",
-            "outputField": "input_bam"
+            "outputField": "mappings_bam"
           }
         },
-        "input_bam_index": {
+        "input_bai": {
           "$dnanexus_link": {
             "stage": "stage-sentieon_dnaseq",
-            "outputField": "input_bai"
+            "outputField": "mappings_bam_bai"
           }
         }
       }
