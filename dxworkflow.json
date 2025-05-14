@@ -1,14 +1,15 @@
 {
-  "name": "dias_single_v2.8.0",
-  "title": "dias_single_v2.8.0",
-  "version": "2.8.0",
+  "name": "dias_single_v2.9.0",
+  "title": "dias_single_v2.9.0",
+  "version": "2.9.0",
   "summary": "Germline single sample workflow",
   "whatsNew": {
     "v2.4.0": "Sentieon updated to v4.2.2",
     "v2.5.0": "Added new sex_check app, updated fastqc, picardQC and mosdepth, to latest version",
     "v2.6.0": "Update vcf_qc to v2.0.0",
     "v2.7.0": "Update vcf_qc to v2.0.1",
-    "v2.8.0": "Update Sentieon to 202308.03 (5.1.0)"
+    "v2.8.0": "Update Sentieon to 202308.03 (5.1.0)",
+    "v2.9.0": "Added new eggd_additional_region_calling app"
   },
   "stages": [
     {
@@ -120,6 +121,30 @@
           }
         },
         "index_file": {
+          "$dnanexus_link": {
+            "stage": "stage-sentieon_dnaseq",
+            "outputField": "mappings_bam_bai"
+          }
+        }
+      }
+    },
+    {
+      "id": "stage-additional_region_calling",
+      "executable": "app-eggd_additional_region_calling/1.0.0",
+      "input": {
+        "sentieon_vcf": {
+          "$dnanexus_link": {
+            "stage": "stage-sentieon_dnaseq",
+            "outputField": "variant_calls_vcf"
+          }
+        },
+        "input_bam": {
+          "$dnanexus_link": {
+            "stage": "stage-sentieon_dnaseq",
+            "outputField": "mappings_bam"
+          }
+        },
+        "input_bai": {
           "$dnanexus_link": {
             "stage": "stage-sentieon_dnaseq",
             "outputField": "mappings_bam_bai"
