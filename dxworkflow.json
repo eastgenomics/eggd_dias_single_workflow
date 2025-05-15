@@ -132,10 +132,10 @@
       "id": "stage-additional_regions_calling",
       "executable": "app-eggd_additional_regions_calling/1.0.0",
       "input": {
-        "variants_vcf": {
+        "sentieon_vcf": {
           "$dnanexus_link": {
             "stage": "stage-sentieon_dnaseq",
-            "outputField": "variant_calls_vcf"
+            "outputField": "variants_vcf"
           }
         },
         "input_bam": {
