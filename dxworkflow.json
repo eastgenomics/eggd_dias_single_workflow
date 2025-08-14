@@ -1,7 +1,7 @@
 {
-  "name": "dias_single_v2.10.0",
-  "title": "dias_single_v2.10.0",
-  "version": "2.10.0",
+  "name": "dias_single_v2.11.0",
+  "title": "dias_single_v2.11.0",
+  "version": "2.11.0",
   "summary": "Germline single sample workflow",
   "whatsNew": {
     "v2.4.0": "Sentieon updated to v4.2.2",
@@ -10,7 +10,8 @@
     "v2.7.0": "Update vcf_qc to v2.0.1",
     "v2.8.0": "Update Sentieon to 202308.03 (5.1.0)",
     "v2.9.0": "Added new eggd_additional_regions_calling app",
-    "v2.10.0": "Update eggd_additional_regions_calling to v1.1.0"
+    "v2.10.0": "Update eggd_additional_regions_calling to v1.1.0",
+    "v2.11.0": "Update vcf_qc to v2.1.0"
   },
   "stages": [
     {
@@ -41,7 +42,7 @@
     },
     {
       "id": "stage-vcfQC",
-      "executable": "app-eggd_vcf_qc/2.0.1",
+      "executable": "app-eggd_vcf_qc/2.1.0",
       "input": {
         "vcf_file": {
           "$dnanexus_link": {
