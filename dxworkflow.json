@@ -27,13 +27,13 @@
       "id": "stage-verifybamid",
       "executable": "app-eggd_verifybamid/2.3.0",
       "input": {
-        "input_bam": {
+        "input_file": {
           "$dnanexus_link": {
             "stage": "stage-sentieon_dnaseq",
             "outputField": "mappings_bam"
           }
         },
-        "input_bam_index": {
+        "input_file_index": {
           "$dnanexus_link": {
             "stage": "stage-sentieon_dnaseq",
             "outputField": "mappings_bam_bai"
@@ -87,13 +87,13 @@
       "id": "stage-mosdepth",
       "executable": "app-eggd_mosdepth/1.2.0",
       "input": {
-        "bam": {
+        "alignment_file": {
           "$dnanexus_link": {
             "stage": "stage-sentieon_dnaseq",
             "outputField": "mappings_bam"
           }
         },
-        "index": {
+        "alignment_index": {
           "$dnanexus_link": {
             "stage": "stage-sentieon_dnaseq",
             "outputField": "mappings_bam_bai"
