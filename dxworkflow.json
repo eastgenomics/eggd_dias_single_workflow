@@ -1,7 +1,7 @@
 {
-  "name": "dias_single_v2.11.0",
-  "title": "dias_single_v2.11.0",
-  "version": "2.11.0",
+  "name": "dias_single_v2.12.0",
+  "title": "dias_single_v2.12.0",
+  "version": "2.12.0",
   "summary": "Germline single sample workflow",
   "whatsNew": {
     "v2.4.0": "Sentieon updated to v4.2.2",
@@ -11,7 +11,8 @@
     "v2.8.0": "Update Sentieon to 202308.03 (5.1.0)",
     "v2.9.0": "Added new eggd_additional_regions_calling app",
     "v2.10.0": "Update eggd_additional_regions_calling to v1.1.0",
-    "v2.11.0": "Update vcf_qc to v2.1.0"
+    "v2.11.0": "Update vcf_qc to v2.1.0",
+    "v2.12.0": "Update eggd_picard_qc to v1.2.0; update eggd_mosdepth to v1.2.0; update eggd_verifybamid to v2.3.0"
   },
   "stages": [
     {
@@ -24,15 +25,15 @@
     },
     {
       "id": "stage-verifybamid",
-      "executable": "app-eggd_verifybamid/2.2.1",
+      "executable": "app-eggd_verifybamid/2.3.0",
       "input": {
-        "input_bam": {
+        "input_file": {
           "$dnanexus_link": {
             "stage": "stage-sentieon_dnaseq",
             "outputField": "mappings_bam"
           }
         },
-        "input_bam_index": {
+        "input_file_index": {
           "$dnanexus_link": {
             "stage": "stage-sentieon_dnaseq",
             "outputField": "mappings_bam_bai"
@@ -72,7 +73,7 @@
     },
     {
       "id": "stage-picardQC",
-      "executable": "app-eggd_picard_QC/1.1.0",
+      "executable": "app-eggd_picard_QC/1.2.0",
       "input": {
         "sorted_bam": {
           "$dnanexus_link": {
@@ -84,15 +85,15 @@
     },
     {
       "id": "stage-mosdepth",
-      "executable": "app-eggd_mosdepth/1.1.0",
+      "executable": "app-eggd_mosdepth/1.2.0",
       "input": {
-        "bam": {
+        "alignment_file": {
           "$dnanexus_link": {
             "stage": "stage-sentieon_dnaseq",
             "outputField": "mappings_bam"
           }
         },
-        "index": {
+        "alignment_index": {
           "$dnanexus_link": {
             "stage": "stage-sentieon_dnaseq",
             "outputField": "mappings_bam_bai"
