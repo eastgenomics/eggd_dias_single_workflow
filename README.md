@@ -3,7 +3,7 @@ DNAnexus workflow definition file of dias_single for germline analysis to be run
 
 -------
 
-## Current Version: 2.12.0
+## Current Version: 2.13.0
 Input files were removed from the workflow description and need to be provided.
 
 This is to allow for flexibility and control of the input files via a config file.
@@ -22,6 +22,7 @@ This is to allow for flexibility and control of the input files via a config fil
 |somalier_extract   |1.2.0|
 |sex_check          |1.1.0|
 |eggd_additional_regions_calling	|1.1.0|
+|eggd_plot_variant_baf	|2.1.0|
 
 
 
