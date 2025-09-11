@@ -157,7 +157,7 @@
       }
     },
     {
-    "id": "stage-plot_variant_baf",
+    "id": "stage-eggd_plot_variant_baf",
     "executable": "app-eggd_plot_variant_baf/2.1.0",
     "input": {
       "vcf": {
