@@ -147,6 +147,18 @@
       }
     },
     {
+      "id": "stage-vcf_normaliser",
+      "executable": "app-eggd_vcf_normaliser/1.0.0",
+      "input": {
+          "vcf_file": {
+            "$dnanexus_link": {
+              "stage": "stage-sentieon_dnaseq",
+              "outputField": "variants_vcf"
+            }
+          }
+      }
+    },
+    {
       "id": "stage-additional_regions_calling",
       "executable": "app-eggd_additional_regions_calling/1.1.0",
       "input": {
