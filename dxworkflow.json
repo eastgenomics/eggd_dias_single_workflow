@@ -14,7 +14,8 @@
     "v2.11.0": "Update vcf_qc to v2.1.0",
     "v2.12.0": "Update eggd_picard_qc to v1.2.0; update eggd_mosdepth to v1.2.0; update eggd_verifybamid to v2.3.0",
     "v2.13.0": "Add  eggd_plot_variant_baf to workflow",
-    "v2.14.0": "Update eggd_picard_qc to v1.3.0 and pass sample VCF and VCF index to Picard to enable CollectVariantCallingMetrics"
+    "v2.14.0": "Update eggd_picard_qc to v1.3.0 and pass sample VCF and VCF index to Picard to enable CollectVariantCallingMetrics",
+    "v2.15.0": "Included the new eggd_vcf_normaliser app"
   },
   "stages": [
     {
