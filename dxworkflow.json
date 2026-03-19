@@ -164,8 +164,8 @@
       "input": {
         "sentieon_vcf": {
           "$dnanexus_link": {
-            "stage": "stage-sentieon_dnaseq",
-            "outputField": "variants_vcf"
+            "stage": "stage-vcf_normaliser",
+            "outputField": "output_vcf"
           }
         },
         "input_bam": {
