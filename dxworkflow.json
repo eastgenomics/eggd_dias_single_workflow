@@ -150,7 +150,7 @@
       "id": "stage-vcf_normaliser",
       "executable": "app-eggd_vcf_normaliser/1.0.0",
       "input": {
-          "vcf_file": {
+          "input_vcf": {
             "$dnanexus_link": {
               "stage": "stage-sentieon_dnaseq",
               "outputField": "variants_vcf"
