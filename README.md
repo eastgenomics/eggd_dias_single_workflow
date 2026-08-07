@@ -12,7 +12,7 @@ This is to allow for flexibility and control of the input files via a config fil
 
 |  App 	| Version  	|
 |---	|---	|
-|eggd_fastqc       |1.2.0|
+|eggd_fastqc       |1.2.1|
 |sention-dnaseq     |5.1.0|
 |verifybamid        |2.3.0|
 |vcf_qc 	        |2.1.0|
