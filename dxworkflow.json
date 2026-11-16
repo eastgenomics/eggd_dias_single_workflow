@@ -1,7 +1,7 @@
 {
-  "name": "dias_single_v2.16.0",
-  "title": "dias_single_v2.16.0",
-  "version": "2.16.0",
+  "name": "dias_single_v2.17.0",
+  "title": "dias_single_v2.17.0",
+  "version": "2.17.0",
   "summary": "Germline single sample workflow",
   "whatsNew": {
     "v2.4.0": "Sentieon updated to v4.2.2",
@@ -185,19 +185,19 @@
       }
     },
     {
-    "id": "stage-eggd_plot_variant_baf",
-    "executable": "app-eggd_plot_variant_baf/2.2.0",
-    "input": {
-      "vcf": {
-        "$dnanexus_link": {
-          "stage": "stage-sentieon_dnaseq",
-          "outputField": "variants_vcf"
-        }
-      },
-      "gvcf": {
-        "$dnanexus_link": {
-          "stage": "stage-sentieon_dnaseq",
-          "outputField": "variants_gvcf"
+      "id": "stage-eggd_plot_variant_baf",
+      "executable": "app-eggd_plot_variant_baf/2.2.0",
+      "input": {
+        "vcf": {
+          "$dnanexus_link": {
+            "stage": "stage-sentieon_dnaseq",
+            "outputField": "variants_vcf"
+          }
+        },
+        "gvcf": {
+          "$dnanexus_link": {
+            "stage": "stage-sentieon_dnaseq",
+            "outputField": "variants_gvcf"
         }
       }
     }
