@@ -16,7 +16,8 @@
     "v2.13.0": "Add  eggd_plot_variant_baf to workflow",
     "v2.14.0": "Update eggd_picard_qc to v1.3.0 and pass sample VCF and VCF index to Picard to enable CollectVariantCallingMetrics",
     "v2.15.0": "Included the new eggd_vcf_normaliser app",
-    "v2.16.0": "Updated eggd_fastqc version to v1.2.1"
+    "v2.16.0": "Updated eggd_fastqc version to v1.2.1",
+    "v2.17.0": "Updated eggd_plot_variant_baf version to v2.2.0"
   },
   "stages": [
     {
@@ -185,7 +186,7 @@
     },
     {
     "id": "stage-eggd_plot_variant_baf",
-    "executable": "app-eggd_plot_variant_baf/2.1.0",
+    "executable": "app-eggd_plot_variant_baf/2.2.0",
     "input": {
       "vcf": {
         "$dnanexus_link": {
